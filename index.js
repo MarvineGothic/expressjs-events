@@ -65,7 +65,7 @@ app.get('/', isAuthorized, (request, response) => {
         console.log('timeout');
         response.status(202);
         response.json({
-            requestUrl: `http://127.0.0.1:8080/getresult/${id}`
+            resultsUrl: `http://127.0.0.1:8080/getresult/${id}`
         })
         response.end();
     }, 25);
